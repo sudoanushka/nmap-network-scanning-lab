@@ -1,0 +1,26 @@
+Scan Type: OS & Service detection/ Comprehensive Scan
+
+Tool: Nmap 7.99
+
+Command: nmap -A [192.168.x.x]
+
+Objective:
+To perform comprehensive reconnaissance by combining OS detection, service/version detection, default NSE scripts,
+ and traceroute against the target.
+
+Target Status:
+Host is Up with approximately 0.079 seconds latency.
+
+Port Results:
+Nmap scanned the default 1,000 TCP ports. All 1,000 ports were reported as filtered (no-response), with 
+no open or closed ports identified.
+
+Observation:
+Nmap could not obtain enough port information for reliable OS fingerprinting and displayed multiple 
+possible OS/device matches, including network cameras, routers, webcams, Linux-based systems, 
+and other network devices. The results were explicitly marked as potentially unreliable. 
+The scan also performed traceroute using TCP port 80, showing 1 hop to the target.
+
+Key Learning:
+Learned how the -A option combines multiple Nmap capabilities, including OS detection, 
+service detection, NSE-based enumeration, and traceroute, to provide a broader view of a target host.

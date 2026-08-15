@@ -1,0 +1,22 @@
+Scan Type: Host discovery
+
+Tool: Nmap 7.99
+
+Command:
+nmap -sn [192.168.x.x]
+
+Objective:
+To identify whether the target host is active on the network without performing a port scan.
+
+Target Status:
+Host is Up — the target responded to Nmap's host-discovery probes.
+
+Port Results:
+No ports scanned. The -sn option performs host discovery only and does not conduct a port scan.
+
+Observation:
+1 active host was detected out of 1 target. The scan completed in approximately 0.50 seconds.
+
+Key Learning:
+Learned how to use Nmap's -sn option for identifying live hosts before performing further 
+network reconnaissance or port-scanning activities.

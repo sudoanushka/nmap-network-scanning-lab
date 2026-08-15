@@ -1,0 +1,26 @@
+Scan Type: OS Detection Scan
+
+Tool: Nmap 7.99
+
+Command:
+sudo nmap -o [192.168.x.x]
+
+Objective:
+To identify the operating system and possible OS/device characteristics of the target host using 
+Nmap's OS detection techniques.
+
+Target Status:
+Host is Up with approximately 0.0011 seconds latency.
+
+Port Results:
+Nmap scanned the default 1,000 TCP ports. All 1,000 ports were reported as filtered (no-response), 
+so no open or closed ports were identified.
+
+Observation:
+Nmap generated several possible OS/device matches, including Windows Server 2003 SP1, Oracle VirtualBox, 
+D-Link devices, QEMU, AXIS network cameras, HP, and other devices, but reported that the OS results may be
+ unreliable because it could not find at least one open and one closed port.
+
+Key Learning:
+Learned how to use Nmap's -O option for OS fingerprinting and why reliable OS detection generally requires 
+Nmap to observe suitable open and closed ports.

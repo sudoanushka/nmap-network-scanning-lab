@@ -1,0 +1,25 @@
+Scan Type: TCP SYN Stealth Scan/ Port scanning
+
+Tool: Nmap 7.99
+
+Command:
+nmap -p- [192.168.x.x]
+
+Objective:
+To scan all 65,535 TCP ports on the target and determine whether any ports are accessible/open.
+
+Target Status: 
+Host is Up with approximately 0.28 seconds latency.
+
+Port Results:
+No open ports were reported. All 65,535 ports were in ignored/filtered states: 33,050 filtered (no response) 
+and 32,485 filtered (network unreachable).
+
+Observation:
+The first screenshot shows the SYN Stealth Scan progressing from approximately 25% to 99%. 
+The second screenshot shows the completed scan and final results. The scan took 
+approximately 121.80 seconds to complete.
+
+Key Learning:
+Learned how to perform a full TCP port scan using -p- and interpret Nmap results, 
+particularly the difference between filtered ports and open/closed ports.
