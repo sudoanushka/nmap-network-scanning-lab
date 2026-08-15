@@ -1,0 +1,25 @@
+Scan Type: Service Version Detection
+
+Tool: Nmap 7.99
+
+Command:
+nmap -sV [192.168.x.x]
+
+Objective:
+To identify the services and their versions running on the target host.
+
+Target Status:
+The target host was detected as up.
+
+Port Results:
+The scan examined the default 1,000 TCP ports. No open services
+were identified in this scan. No open TCP ports were identified n this scan. 
+
+Observation:
+Service detection was performed, but no service/version information
+was returned because the scanned TCP ports did not respond.
+
+Key Learning:
+The -sV option is used to identify running services and their
+versions when accessible services are detected. Filtered ports may
+prevent service enumeration.
